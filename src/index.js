@@ -1,18 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import {AppHeader} from './components/AppHeader';
-
-
-function App() {
-  return (
-    <div>
-      
-      <AppHeader/>
-
-    </div>
-  );
-}
+import { App } from './App'
 
 ReactDOM.render(
   <React.StrictMode>
