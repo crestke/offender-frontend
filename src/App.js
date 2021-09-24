@@ -1,7 +1,8 @@
 import {
     Route,
     Switch,
-    HashRouter,
+    Redirect,
+    BrowserRouter as Router,
     
   } from "react-router-dom";
 import { AppHeader } from './components/AppHeader';
@@ -10,12 +11,12 @@ import { AppHeader } from './components/AppHeader';
 export const App = () => {
   return (
     <div>
-      <HashRouter>
+      <Router>
           <Switch>
-            <AppHeader/>
             <Route exact path="/" component={AppHeader} />
+            <Redirect exact from="/offender-frontend" to="/" />
           </Switch>
-      </HashRouter>
+      </Router>
 
 
     </div>
