@@ -13,7 +13,7 @@ export const App = () => {
     <div>
       <Router>
           <Switch>
-            <Route exact path="/" component={AppHeader} />
+            <Route basename={process.env.PUBLIC_URL} exact path="/" component={AppHeader} />
             <Redirect exact from="/offender-frontend" to="/" />
           </Switch>
       </Router>
